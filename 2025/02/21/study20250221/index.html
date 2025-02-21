@@ -15,8 +15,8 @@
 写好文章    hexo new 文章名
 打包 hexo g
 第二步：
-打包目录下 右键  git bash here
-初始化.git隐藏文件夹,"> 
+把public文件夹的全部文件复制出来到另一个空文件夹
+在新文件夹下，打,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -61,7 +61,8 @@
 <p>写好文章    hexo new 文章名</p>
 <p>打包 hexo g</p>
 <p>第二步：</p>
-<p>打包目录下 右键  git bash here</p>
+<p>把public文件夹的全部文件复制出来到另一个空文件夹</p>
+<p>在新文件夹下，打包目录下 右键  git bash here</p>
 <p>初始化.git隐藏文件夹    git init </p>
 <p>第三步：</p>
 <p>github网页clone页面    复制https</p>
@@ -76,7 +77,18 @@
 <p>参考</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_48592827/article/details/121221161">https://blog.csdn.net/qq_48592827/article/details/121221161</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/amadoGrowers/p/16401072.html">https://www.cnblogs.com/amadoGrowers/p/16401072.html</a></p>
-<h3 id="2第二次上传文件到仓库文件步骤："><a href="#2第二次上传文件到仓库文件步骤：" class="headerlink" title="2第二次上传文件到仓库文件步骤："></a>2第二次上传文件到仓库文件步骤：</h3>
+<h3 id="2第二次上传文件到仓库文件步骤："><a href="#2第二次上传文件到仓库文件步骤：" class="headerlink" title="2第二次上传文件到仓库文件步骤："></a>2第二次上传文件到仓库文件步骤：</h3><p>第一步：</p>
+<p>进入目录   d:</p>
+<p>写好文章    hexo new 文章名</p>
+<p>打包 hexo g</p>
+<p>第二步：</p>
+<p>删除打包目录下的.git文件夹以外的全部文件</p>
+<p>把public的文件全部复制进来</p>
+<p>第三步：</p>
+<p>gitbash输入 git add.   是为了全部文件添加准备合入，或者指定某个文件也可以</p>
+<p>gitbash 输入 git commit -m “本次合入提示”</p>
+<p>gitbash 输入 git push origin master，是合入主分支</p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
