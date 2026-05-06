@@ -1,0 +1,12 @@
+title: LH-1234
+description: Personal blog powered by GitHub Pages and Jekyll.
+url: "https://LH-1234.github.io"
+baseurl: ""
+markdown: kramdown
+theme: null
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
