@@ -1,12 +1,15 @@
-title: LH-1234
-description: Personal blog powered by GitHub Pages and Jekyll.
-url: "https://LH-1234.github.io"
-baseurl: ""
+title: kusari_page   #配置文件
+description: 个人文章与记录
+lang: zh-CN
+timezone: Asia/Shanghai
+
+permalink: /posts/:year/:month/:day/:title/
+
 markdown: kramdown
-theme: null
 
-permalink: /:year/:month/:day/:title/
-
-plugins:
-  - jekyll-feed
-
+defaults:    #配置front matter内容
+  - scope:    #配置规则
+      path: ""     #不限制路径，全匹配
+      type: posts   #只用于文章
+    values:
+      layout: post   #自动套用_layouts下的post布局，也就是post.html

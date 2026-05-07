@@ -1,28 +1,27 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/archive/' | relative_url }}">Archive</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-      </nav>
-    </header>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "/" | relative_url }}">首页</a>
+      <a href="{{ "/archive/" | relative_url }}">归档</a>
+      <a href="{{ "/about/" | relative_url }}">关于</a>
+    </nav>
+  </header>
 
-    <main class="site-main">
-      {{ content }}
-    </main>
+  <main class="container">
+    {{ content }}
+  </main>
 
-    <footer class="site-footer">
-      <span>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</span>
-    </footer>
-  </body>
+  <footer class="site-footer">
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
 </html>
-
