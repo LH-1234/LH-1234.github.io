@@ -1,6 +1,0 @@
----
-layout: featured
-title: 娱乐记录
-permalink: /featured/entertainment/
-featured: entertainment
----
