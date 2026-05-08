@@ -1,11 +1,11 @@
 ---
-layout: default   #文章的homepage
-title: homepage
+layout: default  
+title: welcome
 ---
 
-# 锁链的homepage
+## 欢迎来到校长的个人博客
 
-这里是我的个人文章与记录网站
+这里主要记录我的学习记录，娱乐活动。
 
 ## 精选文章
 
@@ -21,8 +21,17 @@ title: homepage
 暂无精选文章。
 {% endif %}
 
+## 最新文章
+
+{% if site.posts.size > 0 %}
+{% for post in site.posts limit:3 %}
+- {{ post.date | date: "%Y-%m-%d" }} — [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
+{% else %}
+暂无文章。
+{% endif %}
+
 ## 更多
 
-- [查看全部文章]({{ "/archive/" | relative_url }})
-指向归档路径
-- [关于我]({{ "/about/" | relative_url }})
+- [全部文章]({{ "/archive/" | relative_url }})
+- [关于]({{ "/about/" | relative_url }})

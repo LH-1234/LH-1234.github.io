@@ -6,19 +6,7 @@ permalink: /archive/
 
 # 文章归档
 
-## [娱乐记录]({{ "/featured/entertainment/" | relative_url }})
-
-{% assign entertainment_posts = site.posts | where: "featured", "entertainment" %}
-
-{% if entertainment_posts.size > 0 %}
-共 {{ entertainment_posts.size }} 篇文章。
-
-
-{% else %}
-暂无文章。
-{% endif %}
-
-## [游戏与番记录]({{ "/featured/game-anime/" | relative_url }})
+## [娱乐活动]({{ "/featured/game-anime/" | relative_url }})
 
 {% assign game_anime_posts = site.posts | where: "featured", "game-anime" %}
 
