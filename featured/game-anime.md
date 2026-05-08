@@ -1,6 +1,6 @@
 ---
 layout: featured
-title: 游戏与番记录
+title: 娱乐活动
 permalink: /featured/game-anime/
 featured: game-anime
 ---

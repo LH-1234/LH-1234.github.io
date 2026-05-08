@@ -3,9 +3,7 @@ layout: default
 title: welcome
 ---
 
-## 欢迎来到我的个人博客
-
-这里主要记录我的学习记录，娱乐活动。
+## 欢迎来到我的个人博客，主要记录我的学习记录，娱乐活动。
 
 ## 精选文章
 
@@ -34,4 +32,4 @@ title: welcome
 ## 更多
 
 - [全部文章]({{ "/archive/" | relative_url }})
-- [关于]({{ "/about/" | relative_url }})
+- [关于本站]({{ "/about/" | relative_url }})
