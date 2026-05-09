@@ -27,7 +27,7 @@ title: welcome
     <article>
       <div class="post-card-top">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <span>最新</span>
+        <span>0{{ forloop.index }}</span>
       </div>
       <h3>{{ post.title }}</h3>
     </article>
