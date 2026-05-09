@@ -104,29 +104,3 @@ a:hover {
 .post-card h3 {
   margin: 8px 0;
 }
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.category-card {
-  display: block;
-  padding: 24px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #ffffff, #f6f6f6);
-  border: 1px solid #eee;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
-}
-
-.category-card h2 {
-  margin-top: 0;
-}
