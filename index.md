@@ -11,15 +11,17 @@ title: welcome
 <section class="home-section">
   <h2>精选文章</h2>
 
-  <div class="post-grid">
+  <div class="post-grid featured-post-grid">
     {% for post in featured_posts limit:3 %}
-      <article class="post-card">
-        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-        <h3>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
-        <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
-      </article>
+      <a class="post-card featured-post-card" href="{{ post.url | relative_url }}">
+        <article>
+          <div class="post-card-top">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+            <span>精选</span>
+          </div>
+          <h3>{{ post.title }}</h3>
+        </article>
+      </a>
     {% endfor %}
   </div>
 </section>

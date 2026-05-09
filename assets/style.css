@@ -177,16 +177,23 @@ a:hover {
   margin-top: 16px;
 }
 
+.featured-post-grid {
+  margin-top: 16px;
+}
+
+.featured-post-card,
 .latest-post-card {
   min-height: 132px;
   color: inherit;
   text-decoration: none;
 }
 
+.featured-post-card:hover,
 .latest-post-card:hover {
   text-decoration: none;
 }
 
+.featured-post-card article,
 .latest-post-card article {
   min-height: 100%;
   display: flex;
@@ -212,6 +219,12 @@ a:hover {
   line-height: 1.5;
 }
 
+.featured-post-card .post-card-top span {
+  border-color: #eef0e6;
+  color: #6f7d1d;
+}
+
+.featured-post-card:hover h3,
 .latest-post-card:hover h3 {
   color: #064a9f;
 }
