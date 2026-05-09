@@ -5,18 +5,24 @@ title: welcome
 
 ## 欢迎来到校长的个人博客
 
-## 精选文章
-
-{% assign featured_posts = site.posts | where: "featured", true %}
+{% assign featured_posts = site.posts | where: "featured_home", true %}
 
 {% if featured_posts.size > 0 %}
+<section class="home-section">
+  <h2>精选文章</h2>
 
-{% for post in featured_posts %}
-- [{{ post.title }}]({{ post.url | relative_url }})  
-  <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-{% endfor %}
-{% else %}
-暂无精选文章。
+  <div class="post-grid">
+    {% for post in featured_posts limit:3 %}
+      <article class="post-card">
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+        <h3>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
 
 ## 最新文章
