@@ -4,19 +4,6 @@ body {
   line-height: 1.8;
   color: #222;
   background: #fff;
-  animation: page-fade-in 0.45s ease-out;
-}
-
-@keyframes page-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .site-header {
@@ -33,14 +20,12 @@ body {
   font-weight: 700;
   color: #111;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .site-nav a {
   margin-left: 16px;
   color: #555;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .site-nav a:hover {
@@ -55,7 +40,6 @@ body {
 
 a {
   color: #0969da;
-  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -65,8 +49,6 @@ a:hover {
 .post-meta {
   color: #777;
   font-size: 14px;
-  margin-top: -8px;
-  margin-bottom: 32px;
 }
 
 .post-content img {
@@ -83,53 +65,6 @@ a:hover {
 
 .post-content code {
   font-family: Consolas, Monaco, "Courier New", monospace;
-}
-
-.post-content a {
-  text-underline-offset: 3px;
-}
-
-.post-content a:hover {
-  color: #064a9f;
-}
-
-.post-nav {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 56px;
-  padding-top: 24px;
-  border-top: 1px solid #eee;
-}
-
-.post-nav-link {
-  display: block;
-  padding: 16px;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  color: #222;
-  text-decoration: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.post-nav-link:hover {
-  border-color: #d8dee4;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  color: #0969da;
-  text-decoration: none;
-  transform: translateY(-2px);
-}
-
-.post-nav-link span {
-  display: block;
-  margin-bottom: 4px;
-  color: #777;
-  font-size: 13px;
-}
-
-.post-nav-next {
-  grid-column: 2;
-  text-align: right;
 }
 
 .site-footer {
@@ -168,34 +103,4 @@ a:hover {
 
 .post-card h3 {
   margin: 8px 0;
-}
-
-@media (max-width: 600px) {
-  .post-nav {
-    grid-template-columns: 1fr;
-  }
-
-  .post-nav-next {
-    grid-column: auto;
-    text-align: left;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body {
-    animation: none;
-  }
-
-  .site-title,
-  .site-nav a,
-  a,
-  .post-card,
-  .post-nav-link {
-    transition: none;
-  }
-
-  .post-card:hover,
-  .post-nav-link:hover {
-    transform: none;
-  }
 }
