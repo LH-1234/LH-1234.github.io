@@ -18,7 +18,7 @@ GitHub Desktop是一个有可视化页面用于推送合并代码到仓库的软
 
 ![login](/assets/images/2026-05-10-GitHubDesktop/login.png)
 
-登入自己账号后能直接看到自己的仓库，选好文件夹点击克隆即可
+登入自己账号后能直接看到自己的仓库，选好文件夹点击克隆即可。
 
 ![cangku](/assets/images/2026-05-10-GitHubDesktop/cangku.png)
 
