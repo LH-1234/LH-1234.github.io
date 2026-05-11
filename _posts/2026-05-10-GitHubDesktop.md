@@ -3,6 +3,7 @@ layout: post
 title: githubdesktop使用
 date: 2026-05-10
 featured: learn
+featured_name: 学习记录
 ---
 
 

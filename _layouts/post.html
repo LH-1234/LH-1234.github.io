@@ -4,6 +4,11 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
+  {% if page.featured %}
+    <a class="post-featured-link" href="{{ '/featured/' | append: page.featured | append: '/' | relative_url }}">
+      {{ page.featured_name | default: page.featured }}
+    </a>
+  {% endif %}
   <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
   </p>
