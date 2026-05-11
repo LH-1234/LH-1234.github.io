@@ -12,18 +12,37 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.featured %}
+    {% assign found_current_post = false %}
+    {% for post in site.posts %}
+      {% if post.featured == page.featured %}
+        {% if found_current_post %}
+          {% unless previous_featured_post %}
+            {% assign previous_featured_post = post %}
+          {% endunless %}
+        {% endif %}
+
+        {% if post.url == page.url %}
+          {% assign found_current_post = true %}
+        {% elsif found_current_post != true %}
+          {% assign next_featured_post = post %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
   <nav class="post-nav" aria-label="文章导航">
-    {% if page.previous %}
-      <a class="post-nav-link post-nav-prev" href="{{ page.previous.url | relative_url }}">
+    {% if previous_featured_post %}
+      <a class="post-nav-link post-nav-prev" href="{{ previous_featured_post.url | relative_url }}">
         <span>上一篇</span>
-        {{ page.previous.title }}
+        {{ previous_featured_post.title }}
       </a>
     {% endif %}
 
-    {% if page.next %}
-      <a class="post-nav-link post-nav-next" href="{{ page.next.url | relative_url }}">
+    {% if next_featured_post %}
+      <a class="post-nav-link post-nav-next" href="{{ next_featured_post.url | relative_url }}">
         <span>下一篇</span>
-        {{ page.next.title }}
+        {{ next_featured_post.title }}
       </a>
     {% endif %}
   </nav>
