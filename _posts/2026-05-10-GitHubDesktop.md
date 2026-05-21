@@ -13,9 +13,19 @@ GitHub Desktop是一个有可视化页面用于推送合并代码到仓库的软
 
 [GitHub Desktop下载](https://desktop.github.com/download/)
 
+# github创建仓库
+
+登入github，从左侧选择All repositories,然后选择new repositories。
+如图，仓库名称自定义，可见必须选public，因为博客是公开的，所以内容需要公开，外部才能直接访问。其余默认即可。
+![cangku](/assets/images/2026-05-20-vscode1/cangku.png)
+
+打开仓库，尝试手动随便上传个文件到仓库
+
+![shangchuantupian](/assets/images/2026-05-20-vscode1/shangchuantupian.png)
+
 ## 克隆仓库
 
-首先登入自己的账号
+打开GitHub Desktop软件，登入自己的账号
 
 ![login](/assets/images/2026-05-10-GitHubDesktop/login.png)
 
@@ -23,7 +33,7 @@ GitHub Desktop是一个有可视化页面用于推送合并代码到仓库的软
 
 ![cangku](/assets/images/2026-05-10-GitHubDesktop/cangku.png)
 
-克隆成功后就在本地能看到自己的文件
+克隆成功后本地能看到仓库内的文件了
 
 ## 提交修改
 
