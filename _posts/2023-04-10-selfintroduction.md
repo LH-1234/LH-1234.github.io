@@ -32,6 +32,8 @@ QQ572384129。
 
 ![fufu](/assets/images/otherpic/fufu.JPG)
 
+![fufu2](/assets/images/otherpic/fufu2.jpg)
+
 
 
 
