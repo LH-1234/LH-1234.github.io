@@ -26,7 +26,7 @@ featured_name: 学习记录
 
 # cloudflare注册配置
 
-https://dash.cloudflare.com/login
+[cloudflare主页](https://dash.cloudflare.com/login)
 
 Cloudflrare页面注册账号，如果首次注册会让直接填写域名开始，然后选择一个方案。使用快速扫描dns记录，稍等cloudlare会把你的腾讯云的免费解析地址查出来。
 
