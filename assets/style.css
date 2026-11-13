@@ -202,7 +202,7 @@ a:hover {
 
 .post-card time {
   font-size: 0.85rem;
-  color: #777;
+  color: #5f6368;
 }
 
 .post-card h3 {
@@ -223,6 +223,16 @@ a:hover {
   min-height: 132px;
   color: inherit;
   text-decoration: none;
+}
+
+.featured-post-card {
+  border-color: #dbe7f7;
+  background: #eef5ff;
+}
+
+.latest-post-card {
+  border-color: #dfe9d6;
+  background: #f2f7ed;
 }
 
 .featured-post-card:hover,
@@ -258,7 +268,7 @@ a:hover {
 
 .featured-post-card .post-card-top span {
   border-color: #eef0e6;
-  color: #6f7d1d;
+  color: #5b6816;
 }
 
 .featured-post-card:hover h3,
