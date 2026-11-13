@@ -9,7 +9,17 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ "/" | relative_url }}">
+      <img
+        class="site-title-icon"
+        src="{{ '/icon.png' | relative_url }}"
+        alt=""
+        width="28"
+        height="28"
+        aria-hidden="true"
+      >
+      <span>{{ site.title }}</span>
+    </a>
     <nav class="site-nav">
       <a href="{{ "/" | relative_url }}">首页</a>
       <a href="{{ "/archive/" | relative_url }}">文章</a>
